@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    .products,
+    .product-info {
+        width: 50%;
+        height: 900px;
+        overflow: scroll;
+        table {
+            width: 100%;
+            td,
+            th {
+                cursor: pointer;
+                padding: 5px;
+                &:first-child {
+                    width: 150px;
+                }
+            }
+        }
+        button {
+            float: right;
+        }
+    }
+}
